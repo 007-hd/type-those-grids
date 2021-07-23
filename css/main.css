@@ -6,14 +6,20 @@
 /* - Gaps: `.75rem` */
 
 html {
-  font-family: "Merriweather", serif;
+  box-sizing: border-box;
+  font-family: Merriweather, serif;
   line-height: 1.5;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-body {
-  margin: 1rem, 1.5rem;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 h1 {
-  font-style:
+  font-style: italic;
+  font-weight: normal;
 }
