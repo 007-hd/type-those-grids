@@ -19,30 +19,30 @@ body {
   margin: 0; /* should be 0 */
 }
 
-header {
+.banner {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto 4.3rem 7fr 1.5rem;
-  grid-row-gap: .75rem;
+  grid-template-rows: 1fr 1fr;
 }
 
 h1 {
   font-style: italic;
   font-weight: normal;
   font-size: 1.8rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 1.6rem;
+  margin: 1.5rem 0;
+  padding-left: 1rem;
 }
 
-.title {
+.sub-title {
   grid-column: 1 / -1;
-  grid-row: 1 / -1;
+  grid-row: 2 / 3;
+  color: white;
+  padding-left: 1rem;
+  align-self: end;
 }
 
 .banner-image {
   grid-column: 1 / -1;
-  grid-row: 3 / 5;
+  grid-row: 1 / -1;
   max-width: 100%;
 }
 
@@ -50,24 +50,11 @@ h2 {
   margin: 0;
   font-style: italic;
   font-weight: lighter;
-  font-size: 1.45rem;
-  color: white;
-  grid-column: 1 / -1;
-  grid-row: 3 / 4;
-  align-self: end;
-  padding-left: 1rem;
-  padding-bottom: .9rem;
+  font-size: 1.5rem;
 }
 
 p {
-  color: white;
-  grid-column: 1 / -1;
-  grid-row: 4 / 5;
-  align-self: end;
-  padding-left: 1rem;
   margin: 0;
-  padding-bottom: 1.6rem;
-  padding-top: 1rem;
 }
 
 ol {
